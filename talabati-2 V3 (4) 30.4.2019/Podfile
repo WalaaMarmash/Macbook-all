@@ -1,0 +1,41 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, ‘8.0’
+
+target 'talabati2' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for talabati2
+
+  target 'talabati2Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'talabati2UITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+  pod 'FBSDKCoreKit'
+  pod 'FBSDKLoginKit'
+  pod 'FBSDKShareKit'
+  pod 'FBSDKMessengerShareKit'
+  pod 'ImageScrollView'
+  pod 'DropDown'
+  pod 'SwiftyJSON'
+  pod 'Alamofire', '~> 4.4'
+  pod 'ExpandableCell'
+  pod "EVReflection"
+  pod 'DLRadioButton', '~> 1.4'
+  pod 'GoogleMaps'
+  pod 'GooglePlaces'
+  pod 'GooglePlacePicker'
+pod 'Firebase', '~> 4.9.0'
+pod 'Firebase/Messaging'
+pod 'Firebase/Core'
+pod 'WWCalendarTimeSelector'
+pod "ImageSlideshow"
+pod "ImageSlideshow/Alamofire"
+
+
+end

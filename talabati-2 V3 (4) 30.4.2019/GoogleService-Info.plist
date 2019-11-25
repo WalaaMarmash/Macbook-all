@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>437548944465-s17fb2244smmmo7jf9r9mgg339dr2k52.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.437548944465-s17fb2244smmmo7jf9r9mgg339dr2k52</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBZsS-mxq6N5-9p7hjsaywEXuzxhM4bEr8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>437548944465</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>FSH.Tlabati.talabati</string>
+	<key>PROJECT_ID</key>
+	<string>deliverytalabati</string>
+	<key>STORAGE_BUCKET</key>
+	<string>deliverytalabati.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:437548944465:ios:c0c0d52cf3417bb8</string>
+	<key>DATABASE_URL</key>
+	<string>https://deliverytalabati.firebaseio.com</string>
+</dict>
+</plist>
