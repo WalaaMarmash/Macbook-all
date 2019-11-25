@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansArabic.ttf">
+            <string>NeoSansArabic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuViewController" customModule="YallaNezam" customModuleProvider="target">
+            <connections>
+                <outlet property="listView" destination="hLF-Vq-wPF" id="AWE-mi-362"/>
+                <outlet property="logoutBtn" destination="iCv-vk-cmk" id="wWF-u4-npo"/>
+                <outlet property="myView" destination="94O-34-fqw" id="L2S-YO-ZNg"/>
+                <outlet property="settingBtn" destination="6zt-YO-LsZ" id="0Ex-1e-R5x"/>
+                <outlet property="shareBtn" destination="5hH-GK-0tP" id="MzC-tr-hjQ"/>
+                <outlet property="tapOutSide" destination="t8G-36-7Xs" id="uAQ-gL-z7L"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="94O-34-fqw">
+                    <rect key="frame" x="127" y="76" width="215" height="580"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hLF-Vq-wPF">
+                            <rect key="frame" x="0.0" y="0.0" width="215" height="39"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="القائمة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxQ-Qp-4U9">
+                                    <rect key="frame" x="8" y="14" width="189" height="17"/>
+                                    <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="17"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.0" green="0.69803921568627447" blue="0.23921568627450979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="JxQ-Qp-4U9" secondAttribute="trailing" constant="18" id="5wU-ib-j4X"/>
+                                <constraint firstItem="JxQ-Qp-4U9" firstAttribute="leading" secondItem="hLF-Vq-wPF" secondAttribute="leading" constant="8" id="LwM-c9-zT8"/>
+                                <constraint firstItem="JxQ-Qp-4U9" firstAttribute="top" secondItem="hLF-Vq-wPF" secondAttribute="top" constant="14" id="dEV-IA-x6J"/>
+                                <constraint firstAttribute="bottom" secondItem="JxQ-Qp-4U9" secondAttribute="bottom" constant="8" id="zwq-qq-nlF"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6zt-YO-LsZ">
+                            <rect key="frame" x="0.0" y="53" width="215" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="dlQ-0k-lWg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="15"/>
+                            <state key="normal" title="     تفاصيل الحساب">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="settingsBtn:" destination="-1" eventType="touchUpInside" id="DyR-mb-RnQ"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R3x-zP-p9g">
+                            <rect key="frame" x="0.0" y="97" width="215" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="96N-nM-Nwm"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hH-GK-0tP">
+                            <rect key="frame" x="0.0" y="106" width="215" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="Xva-2Z-QV3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="15"/>
+                            <state key="normal" title="     انشر التطبيق">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="shareBtn:" destination="-1" eventType="touchUpInside" id="Bdw-8C-6Ln"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iCv-vk-cmk" userLabel="تفاصيل الحساب">
+                            <rect key="frame" x="0.0" y="163" width="215" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="gxQ-1d-5Br"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="15"/>
+                            <state key="normal" title="     تسجيل الخروج">
+                                <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </state>
+                            <connections>
+                                <action selector="logoutBtn:" destination="-1" eventType="touchUpInside" id="WGX-7l-o9H"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vjf-SY-0N1">
+                            <rect key="frame" x="0.0" y="154" width="215" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="EvD-e1-y1p"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UMC-oB-GW4">
+                            <rect key="frame" x="0.0" y="210" width="215" height="1"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="hbG-U8-M1e"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="hLF-Vq-wPF" secondAttribute="bottom" constant="541" id="0qT-HJ-Ljg"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="leading" secondItem="5hH-GK-0tP" secondAttribute="leading" id="57j-pH-fhT"/>
+                        <constraint firstItem="5hH-GK-0tP" firstAttribute="leading" secondItem="iCv-vk-cmk" secondAttribute="leading" id="5HO-Ai-5L4"/>
+                        <constraint firstItem="iCv-vk-cmk" firstAttribute="top" secondItem="5hH-GK-0tP" secondAttribute="bottom" constant="17" id="6qb-B0-3dE"/>
+                        <constraint firstItem="hLF-Vq-wPF" firstAttribute="top" secondItem="94O-34-fqw" secondAttribute="top" id="9Xb-Nn-Oie"/>
+                        <constraint firstItem="R3x-zP-p9g" firstAttribute="top" secondItem="6zt-YO-LsZ" secondAttribute="bottom" constant="4" id="9w3-if-K7C"/>
+                        <constraint firstItem="UMC-oB-GW4" firstAttribute="top" secondItem="iCv-vk-cmk" secondAttribute="bottom" constant="7" id="BhP-kQ-9WU"/>
+                        <constraint firstItem="UMC-oB-GW4" firstAttribute="trailing" secondItem="iCv-vk-cmk" secondAttribute="trailing" id="DaO-jG-YQI"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="trailing" secondItem="hLF-Vq-wPF" secondAttribute="trailing" id="HOX-fy-A5f"/>
+                        <constraint firstItem="iCv-vk-cmk" firstAttribute="top" secondItem="94O-34-fqw" secondAttribute="top" constant="163" id="MO4-3j-02p"/>
+                        <constraint firstAttribute="trailing" secondItem="R3x-zP-p9g" secondAttribute="trailing" id="OMq-ac-isX"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="trailing" secondItem="R3x-zP-p9g" secondAttribute="trailing" id="Olf-ZQ-Jp7"/>
+                        <constraint firstItem="R3x-zP-p9g" firstAttribute="leading" secondItem="94O-34-fqw" secondAttribute="leading" id="RhM-zz-PNA"/>
+                        <constraint firstItem="Vjf-SY-0N1" firstAttribute="trailing" secondItem="5hH-GK-0tP" secondAttribute="trailing" id="Tkb-HM-pwe"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="top" secondItem="hLF-Vq-wPF" secondAttribute="bottom" constant="14" id="Ty2-Xb-6E5"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="leading" secondItem="R3x-zP-p9g" secondAttribute="leading" id="Zck-VY-KCi"/>
+                        <constraint firstItem="UMC-oB-GW4" firstAttribute="leading" secondItem="iCv-vk-cmk" secondAttribute="leading" id="aFz-Cv-Gjv"/>
+                        <constraint firstItem="5hH-GK-0tP" firstAttribute="trailing" secondItem="iCv-vk-cmk" secondAttribute="trailing" id="go7-xU-qaa"/>
+                        <constraint firstItem="Vjf-SY-0N1" firstAttribute="top" secondItem="5hH-GK-0tP" secondAttribute="bottom" constant="8" id="lDk-ON-19s"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="trailing" secondItem="5hH-GK-0tP" secondAttribute="trailing" id="pXm-aJ-RGq"/>
+                        <constraint firstItem="Vjf-SY-0N1" firstAttribute="leading" secondItem="5hH-GK-0tP" secondAttribute="leading" id="twO-wp-jdY"/>
+                        <constraint firstItem="6zt-YO-LsZ" firstAttribute="leading" secondItem="hLF-Vq-wPF" secondAttribute="leading" id="zK9-rf-oiW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="94O-34-fqw" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-33" id="FeU-W1-0FG"/>
+                <constraint firstItem="94O-34-fqw" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="127" id="JE4-2M-eFf"/>
+                <constraint firstItem="94O-34-fqw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="76" id="ros-SZ-YvM"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="t8G-36-7Xs" appends="YES" id="Fr7-yg-RTr"/>
+            </connections>
+            <point key="canvasLocation" x="133.59999999999999" y="142.57871064467767"/>
+        </view>
+        <tapGestureRecognizer id="t8G-36-7Xs">
+            <connections>
+                <action selector="tapOutside:" destination="-1" id="w8x-Sp-tGo"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="NeoSansArabic-Bold.ttf">
+            <string>NeoSansArabic-Bold</string>
+        </array>
+        <array key="NeoSansArabic.ttf">
+            <string>NeoSansArabic</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChangePassViewController" customModule="YallaNezam" customModuleProvider="target">
+            <connections>
+                <outlet property="newPassTextfield" destination="Oll-FV-c3r" id="RC8-uZ-YoM"/>
+                <outlet property="oldPassTextfield" destination="SoT-dG-TcN" id="uLp-80-1p6"/>
+                <outlet property="reNewPassTextfield" destination="HLl-eM-fSp" id="9k3-dM-2l7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="706"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mG3-ph-Ayx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="286"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Yala Nezam icon-02 copy" translatesAutoresizingMaskIntoConstraints="NO" id="zoa-Fl-NEy">
+                            <rect key="frame" x="94" y="70" width="187" height="199"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.69803921568627447" blue="0.23921568627450979" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="zoa-Fl-NEy" secondAttribute="bottom" constant="17" id="3uE-nA-Jvx"/>
+                        <constraint firstAttribute="trailing" secondItem="zoa-Fl-NEy" secondAttribute="trailing" constant="94" id="JEC-4X-nbd"/>
+                        <constraint firstItem="zoa-Fl-NEy" firstAttribute="leading" secondItem="mG3-ph-Ayx" secondAttribute="leading" constant="94" id="Ka2-CB-iCN"/>
+                        <constraint firstItem="zoa-Fl-NEy" firstAttribute="top" secondItem="mG3-ph-Ayx" secondAttribute="top" constant="70" id="i6X-Qg-4IB"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmZ-ZB-Yak">
+                    <rect key="frame" x="0.0" y="288" width="375" height="418"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMQ-10-9vk">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="418"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كلمة السر القديمة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7J-y0-TUX">
+                                    <rect key="frame" x="19" y="20" width="337" height="25"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="kLF-Ih-yji"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SoT-dG-TcN">
+                                    <rect key="frame" x="19" y="50" width="337" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="كلمة السر الجديدة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NAa-2E-Dz6">
+                                    <rect key="frame" x="19" y="106" width="337" height="25"/>
+                                    <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oll-FV-c3r">
+                                    <rect key="frame" x="19" y="136" width="337" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="اعد كتابة كلمة السر الجديدة" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ksf-aS-Qe8">
+                                    <rect key="frame" x="19" y="201" width="337" height="25"/>
+                                    <fontDescription key="fontDescription" name="NeoSansArabic" family="Neo Sans Arabic" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLl-eM-fSp">
+                                    <rect key="frame" x="19" y="232" width="337" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                            <integer key="value" value="1"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="15"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    </userDefinedRuntimeAttributes>
+                                </textField>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyc-1n-HA2">
+                                    <rect key="frame" x="65" y="348" width="245" height="39"/>
+                                    <color key="backgroundColor" red="0.0" green="0.69803921570000005" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="fontDescription" name="NeoSansArabic-Bold" family="Neo Sans Arabic" pointSize="17"/>
+                                    <state key="normal" title="تغيير">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                            <integer key="value" value="17"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="changePassBtn:" destination="-1" eventType="touchUpInside" id="Hq7-BF-nDH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="SoT-dG-TcN" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="19" id="2Jd-xh-8Fg"/>
+                                <constraint firstItem="hyc-1n-HA2" firstAttribute="top" secondItem="HLl-eM-fSp" secondAttribute="bottom" constant="86" id="3Dw-zt-o8Q"/>
+                                <constraint firstAttribute="trailing" secondItem="NAa-2E-Dz6" secondAttribute="trailing" constant="19" id="4is-P0-0OQ"/>
+                                <constraint firstItem="NAa-2E-Dz6" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="19" id="7de-RJ-BsO"/>
+                                <constraint firstItem="NAa-2E-Dz6" firstAttribute="top" secondItem="SoT-dG-TcN" secondAttribute="bottom" constant="26" id="DRW-OB-gzH"/>
+                                <constraint firstItem="Oll-FV-c3r" firstAttribute="top" secondItem="NAa-2E-Dz6" secondAttribute="bottom" constant="5" id="Da6-If-UrU"/>
+                                <constraint firstItem="hyc-1n-HA2" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="65" id="DdW-3C-k38"/>
+                                <constraint firstItem="Y7J-y0-TUX" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="19" id="EKl-m4-YG2"/>
+                                <constraint firstItem="Y7J-y0-TUX" firstAttribute="centerX" secondItem="BMQ-10-9vk" secondAttribute="centerX" id="EXp-xm-srj"/>
+                                <constraint firstAttribute="trailing" secondItem="hyc-1n-HA2" secondAttribute="trailing" constant="65" id="FRr-Xw-7We"/>
+                                <constraint firstItem="Oll-FV-c3r" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="19" id="HTz-4U-lFO"/>
+                                <constraint firstItem="ksf-aS-Qe8" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="19" id="OhH-47-Ytd"/>
+                                <constraint firstAttribute="bottom" secondItem="hyc-1n-HA2" secondAttribute="bottom" constant="31" id="QL0-jV-b9R"/>
+                                <constraint firstAttribute="trailing" secondItem="HLl-eM-fSp" secondAttribute="trailing" constant="19" id="RQs-B9-Lo5"/>
+                                <constraint firstAttribute="trailing" secondItem="Y7J-y0-TUX" secondAttribute="trailing" constant="19" id="VoD-3U-sws"/>
+                                <constraint firstAttribute="bottom" secondItem="Oll-FV-c3r" secondAttribute="bottom" constant="252" id="Xa4-HL-HFc"/>
+                                <constraint firstItem="HLl-eM-fSp" firstAttribute="top" secondItem="ksf-aS-Qe8" secondAttribute="bottom" constant="6" id="Xwg-Ni-Bec"/>
+                                <constraint firstAttribute="trailing" secondItem="ksf-aS-Qe8" secondAttribute="trailing" constant="19" id="aUs-Ym-l4n"/>
+                                <constraint firstAttribute="bottom" secondItem="NAa-2E-Dz6" secondAttribute="bottom" constant="287" id="bLm-mN-ejU"/>
+                                <constraint firstAttribute="bottom" secondItem="HLl-eM-fSp" secondAttribute="bottom" constant="156" id="cGo-vE-LcG"/>
+                                <constraint firstItem="HLl-eM-fSp" firstAttribute="leading" secondItem="BMQ-10-9vk" secondAttribute="leading" constant="19" id="fhT-EP-f3i"/>
+                                <constraint firstItem="Y7J-y0-TUX" firstAttribute="top" secondItem="BMQ-10-9vk" secondAttribute="top" constant="20" id="gNs-D7-hSG"/>
+                                <constraint firstItem="SoT-dG-TcN" firstAttribute="top" secondItem="Y7J-y0-TUX" secondAttribute="bottom" constant="5" id="kpN-Vk-fxC"/>
+                                <constraint firstAttribute="bottom" secondItem="ksf-aS-Qe8" secondAttribute="bottom" constant="192" id="m44-ef-KB6"/>
+                                <constraint firstAttribute="trailing" secondItem="Oll-FV-c3r" secondAttribute="trailing" constant="19" id="mpD-jb-XoX"/>
+                                <constraint firstItem="ksf-aS-Qe8" firstAttribute="top" secondItem="Oll-FV-c3r" secondAttribute="bottom" constant="35" id="mzb-MQ-rpY"/>
+                                <constraint firstAttribute="trailing" secondItem="SoT-dG-TcN" secondAttribute="trailing" constant="19" id="r4m-q0-afk"/>
+                                <constraint firstAttribute="bottom" secondItem="Y7J-y0-TUX" secondAttribute="bottom" constant="373" id="sZt-1k-rnp"/>
+                                <constraint firstAttribute="bottom" secondItem="SoT-dG-TcN" secondAttribute="bottom" constant="338" id="vhX-js-V4e"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="BMQ-10-9vk" secondAttribute="trailing" id="Ak8-ZL-3HS"/>
+                        <constraint firstItem="BMQ-10-9vk" firstAttribute="bottom" secondItem="lmZ-ZB-Yak" secondAttribute="bottomMargin" constant="8" id="FuI-2F-3dk"/>
+                        <constraint firstItem="BMQ-10-9vk" firstAttribute="leading" secondItem="lmZ-ZB-Yak" secondAttribute="leading" id="XM5-wI-XKH"/>
+                        <constraint firstItem="BMQ-10-9vk" firstAttribute="top" secondItem="lmZ-ZB-Yak" secondAttribute="top" id="aYa-58-S8Q"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="mG3-ph-Ayx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="00B-CZ-FyW"/>
+                <constraint firstItem="lmZ-ZB-Yak" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="7d0-LE-0za"/>
+                <constraint firstItem="mG3-ph-Ayx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AlY-RK-JrI"/>
+                <constraint firstItem="lmZ-ZB-Yak" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="UMh-dx-iTg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="mG3-ph-Ayx" secondAttribute="bottom" constant="420" id="ekk-YW-XEJ"/>
+                <constraint firstItem="lmZ-ZB-Yak" firstAttribute="top" secondItem="mG3-ph-Ayx" secondAttribute="bottom" constant="2" id="fgE-fC-31w"/>
+                <constraint firstItem="lmZ-ZB-Yak" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="gN8-Ty-y1i"/>
+                <constraint firstItem="mG3-ph-Ayx" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="mB7-Od-9hX"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="-175.19999999999999" y="92.653673163418304"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Yala Nezam icon-02 copy" width="516" height="515"/>
+    </resources>
+</document>
