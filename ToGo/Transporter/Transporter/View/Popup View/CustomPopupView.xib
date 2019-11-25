@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vax-ab-ZYk" customClass="CustomPopupView" customModule="ToGo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7P-sB-8ir">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qyR-Fz-UKV">
+                            <rect key="frame" x="159" y="12" width="57" height="16.5"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.32156862749999998" green="0.68235294120000001" blue="0.61568627450000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="qyR-Fz-UKV" firstAttribute="centerY" secondItem="g7P-sB-8ir" secondAttribute="centerY" id="Pi8-lO-eZq"/>
+                        <constraint firstAttribute="height" constant="40" id="UQa-kb-g88"/>
+                        <constraint firstItem="qyR-Fz-UKV" firstAttribute="centerX" secondItem="g7P-sB-8ir" secondAttribute="centerX" id="h6Z-7u-cUG"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uw2-aq-0b3">
+                    <rect key="frame" x="172" y="627" width="30" height="30"/>
+                    <state key="normal" title="OK"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Zms-Iu-6UJ" firstAttribute="bottom" secondItem="uw2-aq-0b3" secondAttribute="bottom" constant="10" id="9mi-gc-V5L"/>
+                <constraint firstAttribute="trailing" secondItem="g7P-sB-8ir" secondAttribute="trailing" id="EN0-N2-TSS"/>
+                <constraint firstItem="g7P-sB-8ir" firstAttribute="top" secondItem="vax-ab-ZYk" secondAttribute="top" id="EoC-4t-lWy"/>
+                <constraint firstItem="uw2-aq-0b3" firstAttribute="centerX" secondItem="vax-ab-ZYk" secondAttribute="centerX" id="N5B-Mv-Hfm"/>
+                <constraint firstItem="g7P-sB-8ir" firstAttribute="leading" secondItem="vax-ab-ZYk" secondAttribute="leading" id="zds-OE-iDE"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Zms-Iu-6UJ"/>
+            <connections>
+                <outlet property="saveBtn" destination="uw2-aq-0b3" id="VXa-cq-bUT"/>
+            </connections>
+            <point key="canvasLocation" x="10" y="772"/>
+        </view>
+    </objects>
+</document>
