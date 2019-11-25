@@ -1,0 +1,845 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E7C02C806D56CC7885B71EB /* Pods_YallaNezam.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B848B6AF1A3C2181988ABBAD /* Pods_YallaNezam.framework */; };
+		41B070862701C11BC1A1D1AA /* Pods_YallaNezamTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2B9CFC7F70DB1D1E365F7C1 /* Pods_YallaNezamTests.framework */; };
+		8D08AE8021B3C0C40057966F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AE7F21B3C0C40057966F /* AppDelegate.swift */; };
+		8D08AE8221B3C0C40057966F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AE8121B3C0C40057966F /* ViewController.swift */; };
+		8D08AE8721B3C0C60057966F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D08AE8621B3C0C60057966F /* Assets.xcassets */; };
+		8D08AE8A21B3C0C60057966F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D08AE8821B3C0C60057966F /* LaunchScreen.storyboard */; };
+		8D08AE9521B3C0C60057966F /* YallaNezamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AE9421B3C0C60057966F /* YallaNezamTests.swift */; };
+		8D08AEA021B3C0C60057966F /* YallaNezamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AE9F21B3C0C60057966F /* YallaNezamUITests.swift */; };
+		8D08AEB021B3E00B0057966F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D08AEAE21B3E00B0057966F /* LoginViewController.swift */; };
+		8D08AEB121B3E00B0057966F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D08AEAF21B3E00B0057966F /* LoginViewController.xib */; };
+		8D179C8D21CA415800FBEBE2 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D179C8B21CA415800FBEBE2 /* MenuViewController.swift */; };
+		8D179C8E21CA415800FBEBE2 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D179C8C21CA415800FBEBE2 /* MenuViewController.xib */; };
+		8D18466D21BE48C20036B218 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D18466B21BE48C20036B218 /* SignUpViewController.swift */; };
+		8D18466E21BE48C20036B218 /* SignUpViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D18466C21BE48C20036B218 /* SignUpViewController.xib */; };
+		8D1C987A21C62DD500174FBB /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C987821C62DD500174FBB /* NotesViewController.swift */; };
+		8D1C987B21C62DD500174FBB /* NotesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1C987921C62DD500174FBB /* NotesViewController.xib */; };
+		8D1C987E21C63D1F00174FBB /* ChangePassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1C987C21C63D1F00174FBB /* ChangePassViewController.swift */; };
+		8D1C987F21C63D1F00174FBB /* ChangePassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1C987D21C63D1F00174FBB /* ChangePassViewController.xib */; };
+		8D1FE3E521BFB3E30068A316 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FE3E321BFB3E30068A316 /* ForgetPasswordViewController.swift */; };
+		8D1FE3E621BFB3E30068A316 /* ForgetPasswordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FE3E421BFB3E30068A316 /* ForgetPasswordViewController.xib */; };
+		8D1FE3E921BFD4350068A316 /* ConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1FE3E721BFD4350068A316 /* ConfirmViewController.swift */; };
+		8D1FE3EA21BFD4350068A316 /* ConfirmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D1FE3E821BFD4350068A316 /* ConfirmViewController.xib */; };
+		8D3180402211ACBA0081CDDF /* SCLAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D31803F2211ACB90081CDDF /* SCLAlertView.swift */; };
+		8D3180422211ACC20081CDDF /* SCLExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3180412211ACC20081CDDF /* SCLExtensions.swift */; };
+		8D3CB81621D8D0C600254AAA /* NewPassViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CB81421D8D0C600254AAA /* NewPassViewController.swift */; };
+		8D3CB81721D8D0C600254AAA /* NewPassViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D3CB81521D8D0C600254AAA /* NewPassViewController.xib */; };
+		8D403D2321DE37C4009F7D2D /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D403D2221DE37C4009F7D2D /* Reachability.swift */; };
+		8D403D2521DE37D1009F7D2D /* YSLNoticeAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D403D2421DE37D1009F7D2D /* YSLNoticeAlert.swift */; };
+		8D40B06D21BD13FD0088EE1A /* NeoSansArabic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D40B06C21BD13FC0088EE1A /* NeoSansArabic.ttf */; };
+		8D40B06F21BD14090088EE1A /* NeoSansArabic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8D40B06E21BD14090088EE1A /* NeoSansArabic-Bold.ttf */; };
+		8D74CD4521CF808200D367B3 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D74CD4321CF808200D367B3 /* SettingsViewController.swift */; };
+		8D74CD4621CF808200D367B3 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D74CD4421CF808200D367B3 /* SettingsViewController.xib */; };
+		8D92C86921DCF8EB0030DC3A /* SharedData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D92C86821DCF8EB0030DC3A /* SharedData.swift */; };
+		8D93611621D0C22400F1FBF0 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D93611421D0C22400F1FBF0 /* CameraViewController.swift */; };
+		8D93611721D0C22400F1FBF0 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D93611521D0C22400F1FBF0 /* CameraViewController.xib */; };
+		94DB90A64F85FA5E7F4088EE /* Pods_YallaNezamUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54B5BCF200842BFE32F5D936 /* Pods_YallaNezamUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8D08AE9121B3C0C60057966F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D08AE7421B3C0C40057966F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D08AE7B21B3C0C40057966F;
+			remoteInfo = YallaNezam;
+		};
+		8D08AE9C21B3C0C60057966F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8D08AE7421B3C0C40057966F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D08AE7B21B3C0C40057966F;
+			remoteInfo = YallaNezam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		031F07CE3BEEA963CF74E9D0 /* Pods-YallaNezam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaNezam.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YallaNezam/Pods-YallaNezam.debug.xcconfig"; sourceTree = "<group>"; };
+		54B5BCF200842BFE32F5D936 /* Pods_YallaNezamUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YallaNezamUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		73157BCCD6F8ACA841DEDAF0 /* Pods-YallaNezamUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaNezamUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YallaNezamUITests/Pods-YallaNezamUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D08AE7C21B3C0C40057966F /* YallaNezam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YallaNezam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D08AE7F21B3C0C40057966F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8D08AE8121B3C0C40057966F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D08AE8621B3C0C60057966F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8D08AE8921B3C0C60057966F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8D08AE8B21B3C0C60057966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D08AE9021B3C0C60057966F /* YallaNezamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YallaNezamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D08AE9421B3C0C60057966F /* YallaNezamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YallaNezamTests.swift; sourceTree = "<group>"; };
+		8D08AE9621B3C0C60057966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D08AE9B21B3C0C60057966F /* YallaNezamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YallaNezamUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D08AE9F21B3C0C60057966F /* YallaNezamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YallaNezamUITests.swift; sourceTree = "<group>"; };
+		8D08AEA121B3C0C60057966F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D08AEAE21B3E00B0057966F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D08AEAF21B3E00B0057966F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8D179C8B21CA415800FBEBE2 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		8D179C8C21CA415800FBEBE2 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		8D18466B21BE48C20036B218 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		8D18466C21BE48C20036B218 /* SignUpViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SignUpViewController.xib; sourceTree = "<group>"; };
+		8D1C987821C62DD500174FBB /* NotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		8D1C987921C62DD500174FBB /* NotesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotesViewController.xib; sourceTree = "<group>"; };
+		8D1C987C21C63D1F00174FBB /* ChangePassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePassViewController.swift; sourceTree = "<group>"; };
+		8D1C987D21C63D1F00174FBB /* ChangePassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChangePassViewController.xib; sourceTree = "<group>"; };
+		8D1FE3E321BFB3E30068A316 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		8D1FE3E421BFB3E30068A316 /* ForgetPasswordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ForgetPasswordViewController.xib; sourceTree = "<group>"; };
+		8D1FE3E721BFD4350068A316 /* ConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmViewController.swift; sourceTree = "<group>"; };
+		8D1FE3E821BFD4350068A316 /* ConfirmViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmViewController.xib; sourceTree = "<group>"; };
+		8D31803F2211ACB90081CDDF /* SCLAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLAlertView.swift; sourceTree = "<group>"; };
+		8D3180412211ACC20081CDDF /* SCLExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCLExtensions.swift; sourceTree = "<group>"; };
+		8D3CB81421D8D0C600254AAA /* NewPassViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPassViewController.swift; sourceTree = "<group>"; };
+		8D3CB81521D8D0C600254AAA /* NewPassViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPassViewController.xib; sourceTree = "<group>"; };
+		8D403D1721DE024D009F7D2D /* HeaderFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HeaderFile.h; sourceTree = "<group>"; };
+		8D403D2221DE37C4009F7D2D /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		8D403D2421DE37D1009F7D2D /* YSLNoticeAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YSLNoticeAlert.swift; sourceTree = "<group>"; };
+		8D40B06C21BD13FC0088EE1A /* NeoSansArabic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = NeoSansArabic.ttf; path = YallaNezam/NeoSansArabic.ttf; sourceTree = "<group>"; };
+		8D40B06E21BD14090088EE1A /* NeoSansArabic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "NeoSansArabic-Bold.ttf"; path = "YallaNezam/NeoSansArabic-Bold.ttf"; sourceTree = "<group>"; };
+		8D74CD4321CF808200D367B3 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8D74CD4421CF808200D367B3 /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		8D92C86821DCF8EB0030DC3A /* SharedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedData.swift; sourceTree = "<group>"; };
+		8D93611421D0C22400F1FBF0 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		8D93611521D0C22400F1FBF0 /* CameraViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
+		9A350C21C385435D6ED571D2 /* Pods-YallaNezamUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaNezamUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YallaNezamUITests/Pods-YallaNezamUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A6ED0C88FEE7F70A333747CB /* Pods-YallaNezamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaNezamTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YallaNezamTests/Pods-YallaNezamTests.release.xcconfig"; sourceTree = "<group>"; };
+		B599078E66BE9066899E9347 /* Pods-YallaNezamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaNezamTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YallaNezamTests/Pods-YallaNezamTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B848B6AF1A3C2181988ABBAD /* Pods_YallaNezam.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YallaNezam.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2B9CFC7F70DB1D1E365F7C1 /* Pods_YallaNezamTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YallaNezamTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6797A3326E705BCD0712106 /* Pods-YallaNezam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YallaNezam.release.xcconfig"; path = "Pods/Target Support Files/Pods-YallaNezam/Pods-YallaNezam.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D08AE7921B3C0C40057966F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E7C02C806D56CC7885B71EB /* Pods_YallaNezam.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D08AE8D21B3C0C60057966F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41B070862701C11BC1A1D1AA /* Pods_YallaNezamTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D08AE9821B3C0C60057966F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				94DB90A64F85FA5E7F4088EE /* Pods_YallaNezamUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1EB37BF2921D79F18239BE5A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B848B6AF1A3C2181988ABBAD /* Pods_YallaNezam.framework */,
+				C2B9CFC7F70DB1D1E365F7C1 /* Pods_YallaNezamTests.framework */,
+				54B5BCF200842BFE32F5D936 /* Pods_YallaNezamUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3F99A4517EA063B3BC1F7F9F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				031F07CE3BEEA963CF74E9D0 /* Pods-YallaNezam.debug.xcconfig */,
+				C6797A3326E705BCD0712106 /* Pods-YallaNezam.release.xcconfig */,
+				B599078E66BE9066899E9347 /* Pods-YallaNezamTests.debug.xcconfig */,
+				A6ED0C88FEE7F70A333747CB /* Pods-YallaNezamTests.release.xcconfig */,
+				73157BCCD6F8ACA841DEDAF0 /* Pods-YallaNezamUITests.debug.xcconfig */,
+				9A350C21C385435D6ED571D2 /* Pods-YallaNezamUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8D08AE7321B3C0C40057966F = {
+			isa = PBXGroup;
+			children = (
+				8D40B06E21BD14090088EE1A /* NeoSansArabic-Bold.ttf */,
+				8D40B06C21BD13FC0088EE1A /* NeoSansArabic.ttf */,
+				8D08AE7E21B3C0C40057966F /* YallaNezam */,
+				8D08AE9321B3C0C60057966F /* YallaNezamTests */,
+				8D08AE9E21B3C0C60057966F /* YallaNezamUITests */,
+				8D08AE7D21B3C0C40057966F /* Products */,
+				3F99A4517EA063B3BC1F7F9F /* Pods */,
+				1EB37BF2921D79F18239BE5A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8D08AE7D21B3C0C40057966F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D08AE7C21B3C0C40057966F /* YallaNezam.app */,
+				8D08AE9021B3C0C60057966F /* YallaNezamTests.xctest */,
+				8D08AE9B21B3C0C60057966F /* YallaNezamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8D08AE7E21B3C0C40057966F /* YallaNezam */ = {
+			isa = PBXGroup;
+			children = (
+				8D3180412211ACC20081CDDF /* SCLExtensions.swift */,
+				8D31803F2211ACB90081CDDF /* SCLAlertView.swift */,
+				8D403D2421DE37D1009F7D2D /* YSLNoticeAlert.swift */,
+				8D403D2221DE37C4009F7D2D /* Reachability.swift */,
+				8D08AE7F21B3C0C40057966F /* AppDelegate.swift */,
+				8D08AE8121B3C0C40057966F /* ViewController.swift */,
+				8D08AE8621B3C0C60057966F /* Assets.xcassets */,
+				8D08AE8821B3C0C60057966F /* LaunchScreen.storyboard */,
+				8D08AE8B21B3C0C60057966F /* Info.plist */,
+				8D08AEAE21B3E00B0057966F /* LoginViewController.swift */,
+				8D08AEAF21B3E00B0057966F /* LoginViewController.xib */,
+				8D18466B21BE48C20036B218 /* SignUpViewController.swift */,
+				8D18466C21BE48C20036B218 /* SignUpViewController.xib */,
+				8D1FE3E321BFB3E30068A316 /* ForgetPasswordViewController.swift */,
+				8D1FE3E421BFB3E30068A316 /* ForgetPasswordViewController.xib */,
+				8D1FE3E721BFD4350068A316 /* ConfirmViewController.swift */,
+				8D1FE3E821BFD4350068A316 /* ConfirmViewController.xib */,
+				8D1C987821C62DD500174FBB /* NotesViewController.swift */,
+				8D1C987921C62DD500174FBB /* NotesViewController.xib */,
+				8D1C987C21C63D1F00174FBB /* ChangePassViewController.swift */,
+				8D1C987D21C63D1F00174FBB /* ChangePassViewController.xib */,
+				8D179C8B21CA415800FBEBE2 /* MenuViewController.swift */,
+				8D179C8C21CA415800FBEBE2 /* MenuViewController.xib */,
+				8D74CD4321CF808200D367B3 /* SettingsViewController.swift */,
+				8D74CD4421CF808200D367B3 /* SettingsViewController.xib */,
+				8D93611421D0C22400F1FBF0 /* CameraViewController.swift */,
+				8D93611521D0C22400F1FBF0 /* CameraViewController.xib */,
+				8D3CB81421D8D0C600254AAA /* NewPassViewController.swift */,
+				8D3CB81521D8D0C600254AAA /* NewPassViewController.xib */,
+				8D92C86821DCF8EB0030DC3A /* SharedData.swift */,
+				8D403D1721DE024D009F7D2D /* HeaderFile.h */,
+			);
+			path = YallaNezam;
+			sourceTree = "<group>";
+		};
+		8D08AE9321B3C0C60057966F /* YallaNezamTests */ = {
+			isa = PBXGroup;
+			children = (
+				8D08AE9421B3C0C60057966F /* YallaNezamTests.swift */,
+				8D08AE9621B3C0C60057966F /* Info.plist */,
+			);
+			path = YallaNezamTests;
+			sourceTree = "<group>";
+		};
+		8D08AE9E21B3C0C60057966F /* YallaNezamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8D08AE9F21B3C0C60057966F /* YallaNezamUITests.swift */,
+				8D08AEA121B3C0C60057966F /* Info.plist */,
+			);
+			path = YallaNezamUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D08AE7B21B3C0C40057966F /* YallaNezam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D08AEA421B3C0C60057966F /* Build configuration list for PBXNativeTarget "YallaNezam" */;
+			buildPhases = (
+				7DDCAB47D61D1AD809CA1BE5 /* [CP] Check Pods Manifest.lock */,
+				8D08AE7821B3C0C40057966F /* Sources */,
+				8D08AE7921B3C0C40057966F /* Frameworks */,
+				8D08AE7A21B3C0C40057966F /* Resources */,
+				23AB9255CB9874C148E4B516 /* [CP] Embed Pods Frameworks */,
+				87EA6495BD789E9A2379973D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YallaNezam;
+			productName = YallaNezam;
+			productReference = 8D08AE7C21B3C0C40057966F /* YallaNezam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D08AE8F21B3C0C60057966F /* YallaNezamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D08AEA721B3C0C60057966F /* Build configuration list for PBXNativeTarget "YallaNezamTests" */;
+			buildPhases = (
+				F4481076DA04F91CD0478FE5 /* [CP] Check Pods Manifest.lock */,
+				8D08AE8C21B3C0C60057966F /* Sources */,
+				8D08AE8D21B3C0C60057966F /* Frameworks */,
+				8D08AE8E21B3C0C60057966F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D08AE9221B3C0C60057966F /* PBXTargetDependency */,
+			);
+			name = YallaNezamTests;
+			productName = YallaNezamTests;
+			productReference = 8D08AE9021B3C0C60057966F /* YallaNezamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8D08AE9A21B3C0C60057966F /* YallaNezamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8D08AEAA21B3C0C60057966F /* Build configuration list for PBXNativeTarget "YallaNezamUITests" */;
+			buildPhases = (
+				395C39B9BF1E44274DFC8E99 /* [CP] Check Pods Manifest.lock */,
+				8D08AE9721B3C0C60057966F /* Sources */,
+				8D08AE9821B3C0C60057966F /* Frameworks */,
+				8D08AE9921B3C0C60057966F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D08AE9D21B3C0C60057966F /* PBXTargetDependency */,
+			);
+			name = YallaNezamUITests;
+			productName = YallaNezamUITests;
+			productReference = 8D08AE9B21B3C0C60057966F /* YallaNezamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8D08AE7421B3C0C40057966F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = FSH;
+				TargetAttributes = {
+					8D08AE7B21B3C0C40057966F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8D08AE8F21B3C0C60057966F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8D08AE7B21B3C0C40057966F;
+					};
+					8D08AE9A21B3C0C60057966F = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8D08AE7B21B3C0C40057966F;
+					};
+				};
+			};
+			buildConfigurationList = 8D08AE7721B3C0C40057966F /* Build configuration list for PBXProject "YallaNezam" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8D08AE7321B3C0C40057966F;
+			productRefGroup = 8D08AE7D21B3C0C40057966F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D08AE7B21B3C0C40057966F /* YallaNezam */,
+				8D08AE8F21B3C0C60057966F /* YallaNezamTests */,
+				8D08AE9A21B3C0C60057966F /* YallaNezamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D08AE7A21B3C0C40057966F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D1FE3E621BFB3E30068A316 /* ForgetPasswordViewController.xib in Resources */,
+				8D1C987F21C63D1F00174FBB /* ChangePassViewController.xib in Resources */,
+				8D08AE8A21B3C0C60057966F /* LaunchScreen.storyboard in Resources */,
+				8D1C987B21C62DD500174FBB /* NotesViewController.xib in Resources */,
+				8D08AE8721B3C0C60057966F /* Assets.xcassets in Resources */,
+				8D40B06D21BD13FD0088EE1A /* NeoSansArabic.ttf in Resources */,
+				8D40B06F21BD14090088EE1A /* NeoSansArabic-Bold.ttf in Resources */,
+				8D74CD4621CF808200D367B3 /* SettingsViewController.xib in Resources */,
+				8D93611721D0C22400F1FBF0 /* CameraViewController.xib in Resources */,
+				8D179C8E21CA415800FBEBE2 /* MenuViewController.xib in Resources */,
+				8D18466E21BE48C20036B218 /* SignUpViewController.xib in Resources */,
+				8D08AEB121B3E00B0057966F /* LoginViewController.xib in Resources */,
+				8D3CB81721D8D0C600254AAA /* NewPassViewController.xib in Resources */,
+				8D1FE3EA21BFD4350068A316 /* ConfirmViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D08AE8E21B3C0C60057966F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D08AE9921B3C0C60057966F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23AB9255CB9874C148E4B516 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YallaNezam/Pods-YallaNezam-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YallaNezam/Pods-YallaNezam-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		395C39B9BF1E44274DFC8E99 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YallaNezamUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DDCAB47D61D1AD809CA1BE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YallaNezam-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87EA6495BD789E9A2379973D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YallaNezam/Pods-YallaNezam-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YallaNezam/Pods-YallaNezam-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F4481076DA04F91CD0478FE5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YallaNezamTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D08AE7821B3C0C40057966F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D403D2321DE37C4009F7D2D /* Reachability.swift in Sources */,
+				8D93611621D0C22400F1FBF0 /* CameraViewController.swift in Sources */,
+				8D3180402211ACBA0081CDDF /* SCLAlertView.swift in Sources */,
+				8D08AEB021B3E00B0057966F /* LoginViewController.swift in Sources */,
+				8D08AE8221B3C0C40057966F /* ViewController.swift in Sources */,
+				8D1FE3E521BFB3E30068A316 /* ForgetPasswordViewController.swift in Sources */,
+				8D74CD4521CF808200D367B3 /* SettingsViewController.swift in Sources */,
+				8D1C987A21C62DD500174FBB /* NotesViewController.swift in Sources */,
+				8D403D2521DE37D1009F7D2D /* YSLNoticeAlert.swift in Sources */,
+				8D3180422211ACC20081CDDF /* SCLExtensions.swift in Sources */,
+				8D3CB81621D8D0C600254AAA /* NewPassViewController.swift in Sources */,
+				8D179C8D21CA415800FBEBE2 /* MenuViewController.swift in Sources */,
+				8D1FE3E921BFD4350068A316 /* ConfirmViewController.swift in Sources */,
+				8D1C987E21C63D1F00174FBB /* ChangePassViewController.swift in Sources */,
+				8D18466D21BE48C20036B218 /* SignUpViewController.swift in Sources */,
+				8D08AE8021B3C0C40057966F /* AppDelegate.swift in Sources */,
+				8D92C86921DCF8EB0030DC3A /* SharedData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D08AE8C21B3C0C60057966F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D08AE9521B3C0C60057966F /* YallaNezamTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D08AE9721B3C0C60057966F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D08AEA021B3C0C60057966F /* YallaNezamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8D08AE9221B3C0C60057966F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D08AE7B21B3C0C40057966F /* YallaNezam */;
+			targetProxy = 8D08AE9121B3C0C60057966F /* PBXContainerItemProxy */;
+		};
+		8D08AE9D21B3C0C60057966F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D08AE7B21B3C0C40057966F /* YallaNezam */;
+			targetProxy = 8D08AE9C21B3C0C60057966F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8D08AE8821B3C0C60057966F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8D08AE8921B3C0C60057966F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8D08AEA221B3C0C60057966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8D08AEA321B3C0C60057966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8D08AEA521B3C0C60057966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 031F07CE3BEEA963CF74E9D0 /* Pods-YallaNezam.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53GP6AHX58;
+				INFOPLIST_FILE = YallaNezam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FSH.YallaNezam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = YallaNezam/HeaderFile.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8D08AEA621B3C0C60057966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6797A3326E705BCD0712106 /* Pods-YallaNezam.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53GP6AHX58;
+				INFOPLIST_FILE = YallaNezam/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FSH.YallaNezam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = YallaNezam/HeaderFile.h;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8D08AEA821B3C0C60057966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B599078E66BE9066899E9347 /* Pods-YallaNezamTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53GP6AHX58;
+				INFOPLIST_FILE = YallaNezamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FSH.YallaNezamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YallaNezam.app/YallaNezam";
+			};
+			name = Debug;
+		};
+		8D08AEA921B3C0C60057966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6ED0C88FEE7F70A333747CB /* Pods-YallaNezamTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53GP6AHX58;
+				INFOPLIST_FILE = YallaNezamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FSH.YallaNezamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YallaNezam.app/YallaNezam";
+			};
+			name = Release;
+		};
+		8D08AEAB21B3C0C60057966F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 73157BCCD6F8ACA841DEDAF0 /* Pods-YallaNezamUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53GP6AHX58;
+				INFOPLIST_FILE = YallaNezamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FSH.YallaNezamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YallaNezam;
+			};
+			name = Debug;
+		};
+		8D08AEAC21B3C0C60057966F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A350C21C385435D6ED571D2 /* Pods-YallaNezamUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 53GP6AHX58;
+				INFOPLIST_FILE = YallaNezamUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = FSH.YallaNezamUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = YallaNezam;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8D08AE7721B3C0C40057966F /* Build configuration list for PBXProject "YallaNezam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D08AEA221B3C0C60057966F /* Debug */,
+				8D08AEA321B3C0C60057966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D08AEA421B3C0C60057966F /* Build configuration list for PBXNativeTarget "YallaNezam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D08AEA521B3C0C60057966F /* Debug */,
+				8D08AEA621B3C0C60057966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D08AEA721B3C0C60057966F /* Build configuration list for PBXNativeTarget "YallaNezamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D08AEA821B3C0C60057966F /* Debug */,
+				8D08AEA921B3C0C60057966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8D08AEAA21B3C0C60057966F /* Build configuration list for PBXNativeTarget "YallaNezamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D08AEAB21B3C0C60057966F /* Debug */,
+				8D08AEAC21B3C0C60057966F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8D08AE7421B3C0C40057966F /* Project object */;
+}
